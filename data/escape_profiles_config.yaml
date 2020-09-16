@@ -1,0 +1,20 @@
+# Specify configuration of escape profile plots.
+# You can specify multiple plots here.
+
+Ellebedy_invivo:  # name of plot
+  conditions:  # antibodies / sera to show and names to use for them
+    2B04_400: 2B04
+    2C02_400: 2C02
+    2C03_400: 2C03
+    mAb-2E06_400: 2E06
+  # plot automatically identified sites?
+  plot_auto_identified_sites: true
+  # add these sites if they aren't automatically identified
+  add_sites: []
+  # exclude these sites even if not automatically identified
+  exclude_sites: []
+  # name of site-level color scheme in `site_color_schemes.csv` **or**
+  # color for all sites
+  site_color_scheme: subdomain
+  # make supplementary data
+  make_supp_data: true
