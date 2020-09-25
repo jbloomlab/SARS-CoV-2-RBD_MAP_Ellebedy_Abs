@@ -214,26 +214,28 @@ with open(models_pickle_file, 'wb') as f:
     Removing variants with substitutions not seen in >=0 single-substitution variants and >=2 variants total.
     Fitting 16 models using 16 CPUs...
     1 of 16: Fit lib2, 2B04_400, no_epistasis in 0.1 sec.
-    2 of 16: Fit lib1, 2C02_400, no_epistasis in 0.2 sec.
-    3 of 16: Fit lib1, 2B04_400, no_epistasis in 0.2 sec.
+    2 of 16: Fit lib1, 2B04_400, no_epistasis in 0.2 sec.
+    3 of 16: Fit lib1, 2C02_400, no_epistasis in 0.2 sec.
     4 of 16: Fit lib1, mAb-2E06_400, no_epistasis in 0.1 sec.
     5 of 16: Fit lib2, mAb-2E06_400, no_epistasis in 0.1 sec.
     6 of 16: Fit lib2, 2C02_400, no_epistasis in 0.3 sec.
-    7 of 16: Fit lib2, 2C03_400, no_epistasis in 0.4 sec.
-    8 of 16: Fit lib1, 2C03_400, no_epistasis in 0.4 sec.
-    9 of 16: Fit lib1, 2C02_400, global_epistasis in 0.7 sec.
-    10 of 16: Fit lib2, 2B04_400, global_epistasis in 0.9 sec.
-    11 of 16: Fit lib2, mAb-2E06_400, global_epistasis in 2.5 sec.
-    12 of 16: Fit lib1, mAb-2E06_400, global_epistasis in 3.5 sec.
-    13 of 16: Fit lib2, 2C02_400, global_epistasis in 6.0 sec.
-    14 of 16: Fit lib1, 2B04_400, global_epistasis in 15.6 sec.
-    15 of 16: Fit lib1, 2C03_400, global_epistasis in 24.5 sec.
-    16 of 16: Fit lib2, 2C03_400, global_epistasis in 25.3 sec.
+    7 of 16: Fit lib1, 2C03_400, no_epistasis in 0.4 sec.
+    8 of 16: Fit lib2, 2C03_400, no_epistasis in 0.4 sec.
+    9 of 16: Fit lib1, 2C02_400, global_epistasis in 0.6 sec.
+    10 of 16: Fit lib2, 2B04_400, global_epistasis in 0.8 sec.
+    11 of 16: Fit lib2, mAb-2E06_400, global_epistasis in 2.4 sec.
+    12 of 16: Fit lib1, mAb-2E06_400, global_epistasis in 3.3 sec.
+    13 of 16: Fit lib2, 2C02_400, global_epistasis in 5.4 sec.
+    14 of 16: Fit lib1, 2B04_400, global_epistasis in 13.7 sec.
+    15 of 16: Fit lib2, 2C03_400, global_epistasis in 21.8 sec.
+    16 of 16: Fit lib1, 2C03_400, global_epistasis in 22.3 sec.
     Dumping the model fits to results/escape_scores/epistasis_models.pickle
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_17_1.png)
+    
 
 
 Now we compare the epistasis models fit by AIC.
@@ -311,7 +313,9 @@ _ = p.draw()
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_19_2.png)
+    
 
 
 Now plot the "shape" of global epistasis as the latent phenotype of each variant versus the experimentally measured phenotype:
@@ -348,7 +352,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_21_0.png)
+    
 
 
 ## Effects of mutations from epistasis models and direct measurements
@@ -442,7 +448,9 @@ assert all(effects_df['raw_single_mut_score'].notnull() | (effects_df['n_single_
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_23_1.png)
+    
 
 
 We need to compute the escape scores (calculated as [here](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores)) back to escape fractions.
@@ -580,15 +588,21 @@ for val, has_single_mut_measurement, color in [
 ```
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_29_0.png)
+    
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_29_1.png)
+    
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_29_2.png)
+    
 
 
 ## Escape at the site level
@@ -767,19 +781,27 @@ for val, color in [
 ```
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_35_0.png)
+    
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_35_1.png)
+    
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_35_2.png)
+    
 
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_35_3.png)
+    
 
 
 ## Write file with escape fractions at mutation and site levels
@@ -973,7 +995,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_39_0.png)
+    
 
 
 We now compute our best estimate of the escape score for each homolog in each library.
@@ -1010,7 +1034,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](scores_to_frac_escape_files/scores_to_frac_escape_41_0.png)
+    
 
 
 Now we write the homolog escape fractions to a file, first adding an "average" column for each homolog measured in both libraries:

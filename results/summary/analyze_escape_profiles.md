@@ -32,11 +32,6 @@ import pdb_prot_align.colorschemes
 import yaml
 ```
 
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/dmslogo/logo.py:38: MatplotlibDeprecationWarning: 
-    The createFontList function was deprecated in Matplotlib 3.2 and will be removed two minor releases later. Use FontManager.addfont instead.
-      matplotlib.font_manager.createFontList(
-
-
 Versions of key software:
 
 
@@ -45,7 +40,7 @@ print(f"Using `dmslogo` version {dmslogo.__version__}")
 print(f"Using `dms_variants` version {dms_variants.__version__}")
 ```
 
-    Using `dmslogo` version 0.3.2
+    Using `dmslogo` version 0.4.0
     Using `dms_variants` version 0.8.4
 
 
@@ -294,7 +289,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_16_0.png)
+    
 
 
 Based on the above plots, choose the thresholds for being above the median and fraction of the max for auto-identified sites:
@@ -390,7 +387,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_20_0.png)
+    
 
 
 Some sites / mutations are totally missing in the `escape_fracs` data frame.
@@ -509,7 +508,9 @@ escape_fracs_padded = (
 
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_24_1.png)
+    
 
 
     Saving DMS color scheme to results/escape_profiles/escape_profiles_dms_colors.csv
@@ -518,7 +519,9 @@ escape_fracs_padded = (
 
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_24_3.png)
+    
 
 
     Saving DMS color scheme to results/escape_profiles/escape_profiles_dms_colors.csv
@@ -659,25 +662,34 @@ for name, specs in escape_profiles_config.items():
 
     
     Making plot Ellebedy_invivo, which has the following configuration specs:
-    {'conditions': {'2B04_400': '2B04', '2C02_400': '2C02', '2C03_400': '2C03', 'mAb-2E06_400': '2E06'}, 'plot_auto_identified_sites': True, 'add_sites': [], 'exclude_sites': [], 'site_color_scheme': 'subdomain', 'make_supp_data': True}
-
-
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+    {'conditions': {'2B04_400': '2B04', '2C02_400': '2C02', '2C03_400': '2C03', 'mAb-2E06_400': '2E06'}, 'plot_auto_identified_sites': True, 'add_sites': [], 'exclude_sites': [], 'site_color_scheme': 'subdomain', 'make_supp_data': True, 'color_by_dms': True}
 
 
 
-![png](analyze_escape_profiles_files/analyze_escape_profiles_28_2.png)
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_1.png)
+    
 
 
     Saving to results/escape_profiles/Ellebedy_invivo_stackedlogo.pdf
+
+
+
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_3.png)
+    
+
+
+    Saving to results/escape_profiles/Ellebedy_invivo_color_by_bind_stackedlogo.pdf
+
+
+
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_5.png)
+    
+
+
+    Saving to results/escape_profiles/Ellebedy_invivo_color_by_expr_stackedlogo.pdf
 
 
 

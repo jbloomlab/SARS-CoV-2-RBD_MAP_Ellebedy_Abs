@@ -181,7 +181,9 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
 
+    
 ![png](make_supp_data_files/make_supp_data_14_1.png)
+    
 
 
     Saving plot to results/supp_data/Ellebedy_invivo-mutation-corr.pdf
@@ -190,7 +192,9 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
 
+    
 ![png](make_supp_data_files/make_supp_data_14_3.png)
+    
 
 
     Saving plot to results/supp_data/Ellebedy_invivo-site-corr.pdf

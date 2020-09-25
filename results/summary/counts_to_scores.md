@@ -119,7 +119,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_19_0.png)
+    
 
 
 And the numerical values plotted above:
@@ -207,15 +209,21 @@ for date, date_df in samples_df.groupby('date', sort=False):
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_23_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_23_1.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_23_2.png)
+    
 
 
 Now similar plots but showing mutation frequency across the gene:
@@ -233,15 +241,21 @@ for date, date_df in samples_df.groupby('date', sort=False):
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_25_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_25_1.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_25_2.png)
+    
 
 
 ## Jackpotting and mutation coverage in pre-selection libraries
@@ -266,7 +280,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_29_0.png)
+    
 
 
 How many mutations are observed frequently in pre-selection libraries?
@@ -288,11 +304,15 @@ for variant_type in ['all', 'single']:
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_31_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_31_1.png)
+    
 
 
 Now make a plot showing what number and fraction of counts are for each variant in each pre-selection sample / library.
@@ -311,11 +331,15 @@ for ystat in ['frac_counts', 'count']:
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_33_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_33_1.png)
+    
 
 
 Now make the same plot breaking down by variant class, which enables determination of which types of variants are at high and low frequencies.
@@ -337,11 +361,15 @@ for ystat in ['frac_counts', 'count']:
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_35_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_35_1.png)
+    
 
 
 We also directly look to see what is the variant in each reference library / sample with the highest fraction counts.
@@ -459,11 +487,15 @@ for lib, lib_df in frac_counts_per_variant.groupby('library'):
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_39_0.png)
+    
 
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_39_1.png)
+    
 
 
 ## Examine counts for wildtype variants
@@ -588,7 +620,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_43_0.png)
+    
 
 
 ## Compute escape scores
@@ -1266,7 +1300,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_53_0.png)
+    
 
 
 ## Apply ACE2-binding / expression filter to variant mutations
@@ -1462,7 +1498,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_57_0.png)
+    
 
 
 ## Examine and write escape scores
@@ -1497,7 +1535,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_59_0.png)
+    
 
 
 Also, we want to see how much the high escape scores are correlated with simple coverage.
@@ -1526,7 +1566,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](counts_to_scores_files/counts_to_scores_61_0.png)
+    
 
 
 Write the escape scores to a file:
