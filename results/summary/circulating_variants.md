@@ -375,10 +375,7 @@ sites of significant antigenic escape across all mAbs.
 
 | Mutation | binding effect | expression effect | number of GISAID sequences | number locations | locations                                                                                                    |
 |:---------|---------------:|------------------:|---------------------------:|-----------------:|:-------------------------------------------------------------------------------------------------------------|
-| A352S    |          -0.06 |             -0.26 |                          8 |                4 | list(c(“Mexico”, “Netherlands”, “Indonesia”, “Wales”))                                                       |
-| A352V    |          -0.52 |             -1.79 |                          2 |                2 | list(c(“Israel”, “England”))                                                                                 |
 | R357K    |           0.05 |              0.18 |                          2 |                2 | list(c(“Japan”, “USA”))                                                                                      |
-| C361T    |          -0.61 |             -1.08 |                          4 |                1 | list(“Panama”)                                                                                               |
 | N394Y    |          -0.02 |             -0.12 |                          1 |                1 | list(“Japan”)                                                                                                |
 | K417N    |          -0.45 |              0.10 |                          4 |                3 | list(c(“Northern\_Ireland”, “Germany”, “England”))                                                           |
 | K417R    |          -0.17 |              0.08 |                          1 |                1 | list(“Israel”)                                                                                               |
@@ -389,7 +386,6 @@ sites of significant antigenic escape across all mAbs.
 | Y453F    |           0.25 |             -0.08 |                          9 |                3 | list(c(“Netherlands”, “South\_Africa”, “Switzerland”))                                                       |
 | F456L    |          -0.11 |             -0.49 |                          2 |                2 | list(c(“USA”, “South\_Korea”))                                                                               |
 | K462N    |          -0.08 |             -0.33 |                          1 |                1 | list(“Portugal”)                                                                                             |
-| E465D    |          -0.12 |             -0.57 |                          1 |                1 | list(“South\_Africa”)                                                                                        |
 | I468F    |          -0.19 |             -1.04 |                          2 |                2 | list(c(“Senegal”, “Australia”))                                                                              |
 | I468T    |          -0.14 |              0.17 |                          3 |                3 | list(c(“Australia”, “Scotland”, “England”))                                                                  |
 | I468V    |          -0.03 |              0.07 |                          6 |                3 | list(c(“Turkey”, “England”, “South\_Africa”))                                                                |
@@ -412,8 +408,6 @@ sites of significant antigenic escape across all mAbs.
 | Q493R    |          -0.09 |             -0.06 |                          1 |                1 | list(“England”)                                                                                              |
 | S494L    |          -0.35 |             -1.02 |                          3 |                3 | list(c(“Australia”, “England”, “Switzerland”))                                                               |
 | S494P    |           0.00 |             -0.02 |                         14 |                8 | list(c(“Wales”, “USA”, “Singapore”, “England”, “India”, “Sweden”, “Scotland”, “Spain”))                      |
-| S514F    |          -0.23 |             -0.91 |                          2 |                2 | list(c(“Scotland”, “England”))                                                                               |
-| S514Y    |          -0.12 |             -0.54 |                          1 |                1 | list(“Oman”)                                                                                                 |
 
 Output table giving nobs and geographic spread for circulating mutants.
 

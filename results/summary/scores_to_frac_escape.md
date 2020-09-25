@@ -113,7 +113,7 @@ print(f"Read {len(escape_scores_homologs)} scores for the homologs.")
 ```
 
     Reading escape scores for primary target SARS-CoV-2 from results/escape_scores/scores.csv
-    Read 180869 scores for the primary target.
+    Read 149082 scores for the primary target.
     
     Reading escape scores for homologs from results/escape_scores/scores_homologs.csv
     For homologs, just keeping the following: SARS-CoV-2, SARS-CoV, GD-Pangolin, LYRa11, RaTG13, WIV16
@@ -214,21 +214,21 @@ with open(models_pickle_file, 'wb') as f:
     Removing variants with substitutions not seen in >=0 single-substitution variants and >=2 variants total.
     Fitting 16 models using 16 CPUs...
     1 of 16: Fit lib2, 2B04_400, no_epistasis in 0.1 sec.
-    2 of 16: Fit lib1, 2B04_400, no_epistasis in 0.2 sec.
-    3 of 16: Fit lib1, 2C02_400, no_epistasis in 0.2 sec.
-    4 of 16: Fit lib1, mAb-2E06_400, no_epistasis in 0.1 sec.
-    5 of 16: Fit lib2, mAb-2E06_400, no_epistasis in 0.1 sec.
-    6 of 16: Fit lib2, 2C02_400, no_epistasis in 0.3 sec.
-    7 of 16: Fit lib1, 2C03_400, no_epistasis in 0.4 sec.
-    8 of 16: Fit lib2, 2C03_400, no_epistasis in 0.4 sec.
-    9 of 16: Fit lib1, 2C02_400, global_epistasis in 0.6 sec.
-    10 of 16: Fit lib2, 2B04_400, global_epistasis in 0.8 sec.
-    11 of 16: Fit lib2, mAb-2E06_400, global_epistasis in 2.4 sec.
-    12 of 16: Fit lib1, mAb-2E06_400, global_epistasis in 3.3 sec.
-    13 of 16: Fit lib2, 2C02_400, global_epistasis in 5.4 sec.
-    14 of 16: Fit lib1, 2B04_400, global_epistasis in 13.7 sec.
-    15 of 16: Fit lib2, 2C03_400, global_epistasis in 21.8 sec.
-    16 of 16: Fit lib1, 2C03_400, global_epistasis in 22.3 sec.
+    2 of 16: Fit lib1, mAb-2E06_400, no_epistasis in 0.1 sec.
+    3 of 16: Fit lib2, mAb-2E06_400, no_epistasis in 0.1 sec.
+    4 of 16: Fit lib1, 2B04_400, no_epistasis in 0.3 sec.
+    5 of 16: Fit lib1, 2C03_400, no_epistasis in 0.3 sec.
+    6 of 16: Fit lib2, 2C02_400, no_epistasis in 0.4 sec.
+    7 of 16: Fit lib2, 2C03_400, no_epistasis in 0.4 sec.
+    8 of 16: Fit lib1, 2C02_400, no_epistasis in 0.5 sec.
+    9 of 16: Fit lib1, 2C03_400, global_epistasis in 1.1 sec.
+    10 of 16: Fit lib2, 2B04_400, global_epistasis in 1.3 sec.
+    11 of 16: Fit lib1, 2B04_400, global_epistasis in 1.9 sec.
+    12 of 16: Fit lib1, mAb-2E06_400, global_epistasis in 2.7 sec.
+    13 of 16: Fit lib2, mAb-2E06_400, global_epistasis in 3.4 sec.
+    14 of 16: Fit lib1, 2C02_400, global_epistasis in 6.5 sec.
+    15 of 16: Fit lib2, 2C02_400, global_epistasis in 8.2 sec.
+    16 of 16: Fit lib2, 2C03_400, global_epistasis in 13.8 sec.
     Dumping the model fits to results/escape_scores/epistasis_models.pickle
 
 
@@ -282,39 +282,9 @@ p = (ggplot(loglik_df) +
 _ = p.draw()
 ```
 
-    These are the samples for which the global_epistasis AIC is greater than the no_epistasis AIC. 
-    There is probably something wrong with them:
-    
-
-
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>epistasis_func</th>
-      <th>selection</th>
-      <th>library</th>
-      <th>global_epistasis</th>
-      <th>no_epistasis</th>
-      <th>deltaAIC</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th></th>
-      <td>2B04_400</td>
-      <td>lib2</td>
-      <td>-85668.110986</td>
-      <td>-86793.233233</td>
-      <td>-1125.122247</td>
-    </tr>
-  </tbody>
-</table>
-
-
 
     
-![png](scores_to_frac_escape_files/scores_to_frac_escape_19_2.png)
+![png](scores_to_frac_escape_files/scores_to_frac_escape_19_0.png)
     
 
 
@@ -659,46 +629,46 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>2B04_400</td>
       <td>average</td>
       <td>1</td>
-      <td>0.002771</td>
-      <td>0.052650</td>
-      <td>0.003428</td>
-      <td>0.065128</td>
+      <td>0.001876</td>
+      <td>0.030017</td>
+      <td>0.003767</td>
+      <td>0.060277</td>
     </tr>
     <tr>
       <td>2B04_400</td>
       <td>average</td>
       <td>2</td>
-      <td>0.002571</td>
-      <td>0.048857</td>
-      <td>0.002035</td>
-      <td>0.038670</td>
+      <td>0.002093</td>
+      <td>0.039771</td>
+      <td>0.002040</td>
+      <td>0.038758</td>
     </tr>
     <tr>
       <td>2B04_400</td>
       <td>average</td>
       <td>3</td>
-      <td>0.002407</td>
-      <td>0.045740</td>
-      <td>0.003272</td>
-      <td>0.062175</td>
+      <td>0.002866</td>
+      <td>0.051581</td>
+      <td>0.003387</td>
+      <td>0.060967</td>
     </tr>
     <tr>
       <td>2B04_400</td>
       <td>average</td>
       <td>4</td>
-      <td>0.007498</td>
-      <td>0.142454</td>
-      <td>0.004559</td>
-      <td>0.086620</td>
+      <td>0.003491</td>
+      <td>0.062838</td>
+      <td>0.004606</td>
+      <td>0.082902</td>
     </tr>
     <tr>
       <td>2B04_400</td>
       <td>average</td>
       <td>5</td>
-      <td>0.002667</td>
-      <td>0.050677</td>
-      <td>0.001858</td>
-      <td>0.035294</td>
+      <td>0.002288</td>
+      <td>0.043476</td>
+      <td>0.001662</td>
+      <td>0.031575</td>
     </tr>
   </tbody>
 </table>
@@ -874,30 +844,12 @@ escape_fracs_to_write.to_csv(config['escape_fracs'], index=False, float_format='
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001161</td>
+      <td>0.001216</td>
       <td>0.000602</td>
-      <td>0.05265</td>
-      <td>0.065128</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>2B04_400</td>
-      <td>average</td>
-      <td>2B04_400</td>
-      <td>1</td>
-      <td>331</td>
-      <td>N</td>
-      <td>C</td>
-      <td>E</td>
-      <td>331</td>
-      <td>0.001007</td>
-      <td>0.002096</td>
-      <td>0.05265</td>
-      <td>0.065128</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.030017</td>
+      <td>0.060277</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -910,13 +862,13 @@ escape_fracs_to_write.to_csv(config['escape_fracs'], index=False, float_format='
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001007</td>
-      <td>0.001018</td>
-      <td>0.05265</td>
-      <td>0.065128</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
+      <td>0.000000</td>
+      <td>0.002036</td>
+      <td>0.030017</td>
+      <td>0.060277</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>2B04_400</td>
@@ -928,12 +880,12 @@ escape_fracs_to_write.to_csv(config['escape_fracs'], index=False, float_format='
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001067</td>
+      <td>0.001172</td>
       <td>0.001079</td>
-      <td>0.05265</td>
-      <td>0.065128</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.030017</td>
+      <td>0.060277</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -946,12 +898,30 @@ escape_fracs_to_write.to_csv(config['escape_fracs'], index=False, float_format='
       <td>F</td>
       <td>E</td>
       <td>331</td>
-      <td>0.003066</td>
-      <td>0.001223</td>
-      <td>0.05265</td>
-      <td>0.065128</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.003186</td>
+      <td>0.001202</td>
+      <td>0.030017</td>
+      <td>0.060277</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2B04_400</td>
+      <td>average</td>
+      <td>2B04_400</td>
+      <td>1</td>
+      <td>331</td>
+      <td>N</td>
+      <td>G</td>
+      <td>E</td>
+      <td>331</td>
+      <td>0.001503</td>
+      <td>0.000427</td>
+      <td>0.030017</td>
+      <td>0.060277</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
   </tbody>

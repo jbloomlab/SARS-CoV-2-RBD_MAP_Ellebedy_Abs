@@ -1377,9 +1377,9 @@ escape_scores['pass_ACE2bind_expr_filter'] = (
         )
 ```
 
-    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and for variants from results/prior_DMS_data/variant_ACE2binding.csv and results/prior_DMS_data/variant_expression.csv, and filtering for mutations / variants with binding >=-2.35.and expression >= -1.5.
+    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and for variants from results/prior_DMS_data/variant_ACE2binding.csv and results/prior_DMS_data/variant_expression.csv, and filtering for mutations / variants with binding >=-2.35.and expression >= -1.
     3422 of 4221 mutations have adequate bind.
-    2697 of 4221 mutations have adequate expr.
+    2328 of 4221 mutations have adequate expr.
     
     Total variants of SARS-CoV-2 that pass bind filter:
 
@@ -1443,20 +1443,20 @@ escape_scores['pass_ACE2bind_expr_filter'] = (
     <tr>
       <th rowspan="2" valign="top">lib1</th>
       <th>False</th>
-      <td>70834</td>
+      <td>75269</td>
     </tr>
     <tr>
       <th>True</th>
-      <td>27735</td>
+      <td>23300</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">lib2</th>
       <th>False</th>
-      <td>69938</td>
+      <td>74439</td>
     </tr>
     <tr>
       <th>True</th>
-      <td>26574</td>
+      <td>22073</td>
     </tr>
   </tbody>
 </table>
