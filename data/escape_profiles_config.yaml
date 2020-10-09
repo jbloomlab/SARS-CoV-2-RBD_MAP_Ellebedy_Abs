@@ -18,3 +18,6 @@ Ellebedy_invivo:  # name of plot
   site_color_scheme: subdomain
   # make supplementary data
   make_supp_data: true
+  # make escape profiles colored by DMS bind / expr measurements?
+  color_by_dms: True
+

@@ -32,11 +32,6 @@ import pdb_prot_align.colorschemes
 import yaml
 ```
 
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/dmslogo/logo.py:38: MatplotlibDeprecationWarning: 
-    The createFontList function was deprecated in Matplotlib 3.2 and will be removed two minor releases later. Use FontManager.addfont instead.
-      matplotlib.font_manager.createFontList(
-
-
 Versions of key software:
 
 
@@ -45,7 +40,7 @@ print(f"Using `dmslogo` version {dmslogo.__version__}")
 print(f"Using `dms_variants` version {dms_variants.__version__}")
 ```
 
-    Using `dmslogo` version 0.3.2
+    Using `dmslogo` version 0.4.0
     Using `dms_variants` version 0.8.4
 
 
@@ -127,27 +122,12 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001161</td>
+      <td>0.001216</td>
       <td>0.000603</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>2B04_400</td>
-      <td>331</td>
-      <td>N</td>
-      <td>C</td>
-      <td>E</td>
-      <td>331</td>
-      <td>0.001007</td>
-      <td>0.002096</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -157,13 +137,13 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001007</td>
-      <td>0.001018</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
+      <td>0.000000</td>
+      <td>0.002036</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>2B04_400</td>
@@ -172,12 +152,12 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001067</td>
+      <td>0.001172</td>
       <td>0.001079</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -187,12 +167,27 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>F</td>
       <td>E</td>
       <td>331</td>
-      <td>0.003066</td>
-      <td>0.001223</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.003186</td>
+      <td>0.001202</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2B04_400</td>
+      <td>331</td>
+      <td>N</td>
+      <td>G</td>
+      <td>E</td>
+      <td>331</td>
+      <td>0.001503</td>
+      <td>0.000427</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
   </tbody>
@@ -294,7 +289,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_16_0.png)
+    
 
 
 Based on the above plots, choose the thresholds for being above the median and fraction of the max for auto-identified sites:
@@ -324,7 +321,7 @@ display(HTML(auto_identified_sites.head().to_html()))
 auto_identified_sites.to_csv(config['significant_escape_sites'], index=False)
 ```
 
-    Overall auto-identified 32 sites.
+    Overall auto-identified 25 sites.
     Here are the first few:
 
 
@@ -341,27 +338,27 @@ auto_identified_sites.to_csv(config['significant_escape_sites'], index=False)
     <tr>
       <th>0</th>
       <td>2B04_400</td>
-      <td>361</td>
+      <td>472</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2B04_400</td>
-      <td>472</td>
+      <td>484</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2B04_400</td>
-      <td>484</td>
+      <td>486</td>
     </tr>
     <tr>
       <th>3</th>
       <td>2B04_400</td>
-      <td>485</td>
+      <td>490</td>
     </tr>
     <tr>
       <th>4</th>
       <td>2B04_400</td>
-      <td>486</td>
+      <td>494</td>
     </tr>
   </tbody>
 </table>
@@ -390,7 +387,9 @@ _ = p.draw()
 ```
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_20_0.png)
+    
 
 
 Some sites / mutations are totally missing in the `escape_fracs` data frame.
@@ -509,16 +508,20 @@ escape_fracs_padded = (
 
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_24_1.png)
+    
 
 
     Saving DMS color scheme to results/escape_profiles/escape_profiles_dms_colors.csv
     
-    expr ranges from -1.5 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/expr_scalebar.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/expr_scalebar.pdf
 
 
 
+    
 ![png](analyze_escape_profiles_files/analyze_escape_profiles_24_3.png)
+    
 
 
     Saving DMS color scheme to results/escape_profiles/escape_profiles_dms_colors.csv
@@ -659,25 +662,34 @@ for name, specs in escape_profiles_config.items():
 
     
     Making plot Ellebedy_invivo, which has the following configuration specs:
-    {'conditions': {'2B04_400': '2B04', '2C02_400': '2C02', '2C03_400': '2C03', 'mAb-2E06_400': '2E06'}, 'plot_auto_identified_sites': True, 'add_sites': [], 'exclude_sites': [], 'site_color_scheme': 'subdomain', 'make_supp_data': True}
-
-
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
-    /fh/fast/bloom_j/software/miniconda3/envs/BloomLab/lib/python3.8/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+    {'conditions': {'2B04_400': '2B04', '2C02_400': '2C02', '2C03_400': '2C03', 'mAb-2E06_400': '2E06'}, 'plot_auto_identified_sites': True, 'add_sites': [], 'exclude_sites': [], 'site_color_scheme': 'subdomain', 'make_supp_data': True, 'color_by_dms': True}
 
 
 
-![png](analyze_escape_profiles_files/analyze_escape_profiles_28_2.png)
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_1.png)
+    
 
 
     Saving to results/escape_profiles/Ellebedy_invivo_stackedlogo.pdf
+
+
+
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_3.png)
+    
+
+
+    Saving to results/escape_profiles/Ellebedy_invivo_color_by_bind_stackedlogo.pdf
+
+
+
+    
+![png](analyze_escape_profiles_files/analyze_escape_profiles_28_5.png)
+    
+
+
+    Saving to results/escape_profiles/Ellebedy_invivo_color_by_expr_stackedlogo.pdf
 
 
 

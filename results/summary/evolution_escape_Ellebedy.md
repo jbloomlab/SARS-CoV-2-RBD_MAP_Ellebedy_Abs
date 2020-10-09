@@ -84,7 +84,7 @@ Session info for reproducing environment:
 
     ## R version 3.6.2 (2019-12-12)
     ## Platform: x86_64-pc-linux-gnu (64-bit)
-    ## Running under: Ubuntu 18.04.5 LTS
+    ## Running under: Ubuntu 18.04.4 LTS
     ## 
     ## Matrix products: default
     ## BLAS/LAPACK: /app/software/OpenBLAS/0.3.7-GCC-8.3.0/lib/libopenblas_haswellp-r0.3.7.so
@@ -103,23 +103,22 @@ Session info for reproducing environment:
     ## other attached packages:
     ##  [1] knitr_1.26        bio3d_2.4-0       gridExtra_2.3     forcats_0.4.0    
     ##  [5] stringr_1.4.0     dplyr_0.8.3       purrr_0.3.3       readr_1.3.1      
-    ##  [9] tidyr_1.0.0       tibble_3.0.1      ggplot2_3.3.0     tidyverse_1.3.0  
+    ##  [9] tidyr_1.0.0       tibble_3.0.2      ggplot2_3.3.0     tidyverse_1.3.0  
     ## [13] data.table_1.12.8 yaml_2.2.0       
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] tidyselect_0.2.5 xfun_0.11        haven_2.2.0      lattice_0.20-38 
-    ##  [5] colorspace_1.4-1 vctrs_0.2.4      generics_0.0.2   htmltools_0.4.0 
-    ##  [9] rlang_0.4.5      pillar_1.4.3     glue_1.3.1       withr_2.1.2     
-    ## [13] DBI_1.1.0        dbplyr_1.4.2     modelr_0.1.5     readxl_1.3.1    
-    ## [17] lifecycle_0.2.0  munsell_0.5.0    gtable_0.3.0     cellranger_1.1.0
-    ## [21] rvest_0.3.5      evaluate_0.14    parallel_3.6.2   fansi_0.4.0     
-    ## [25] broom_0.5.6      Rcpp_1.0.3       scales_1.1.0     backports_1.1.5 
-    ## [29] jsonlite_1.6     fs_1.3.1         hms_0.5.2        digest_0.6.23   
-    ## [33] stringi_1.4.3    grid_3.6.2       cli_2.0.0        tools_3.6.2     
-    ## [37] magrittr_1.5     crayon_1.3.4     pkgconfig_2.0.3  ellipsis_0.3.0  
-    ## [41] xml2_1.2.2       reprex_0.3.0     lubridate_1.7.4  assertthat_0.2.1
-    ## [45] rmarkdown_2.0    httr_1.4.1       rstudioapi_0.10  R6_2.4.1        
-    ## [49] nlme_3.1-143     compiler_3.6.2
+    ##  [1] tidyselect_1.1.0 xfun_0.11        haven_2.2.0      colorspace_1.4-1
+    ##  [5] vctrs_0.3.1      generics_0.0.2   htmltools_0.4.0  rlang_0.4.7     
+    ##  [9] pillar_1.4.5     glue_1.3.1       withr_2.1.2      DBI_1.1.0       
+    ## [13] dbplyr_1.4.2     modelr_0.1.5     readxl_1.3.1     lifecycle_0.2.0 
+    ## [17] munsell_0.5.0    gtable_0.3.0     cellranger_1.1.0 rvest_0.3.5     
+    ## [21] evaluate_0.14    parallel_3.6.2   fansi_0.4.0      broom_0.7.0     
+    ## [25] Rcpp_1.0.3       scales_1.1.0     backports_1.1.5  jsonlite_1.6    
+    ## [29] fs_1.3.1         hms_0.5.2        digest_0.6.23    stringi_1.4.3   
+    ## [33] grid_3.6.2       cli_2.0.0        tools_3.6.2      magrittr_1.5    
+    ## [37] crayon_1.3.4     pkgconfig_2.0.3  ellipsis_0.3.0   xml2_1.2.2      
+    ## [41] reprex_0.3.0     lubridate_1.7.4  assertthat_0.2.1 rmarkdown_2.0   
+    ## [45] httr_1.4.1       rstudioapi_0.10  R6_2.4.1         compiler_3.6.2
 
 Load in relevant data for analyses: escape scores for the Ellebedy mAbs,
 deep mutational scanning scores, and sites of significant escape for
@@ -390,31 +389,26 @@ fractions of &gt;10% and are found among circulating variants.
 
 | antibody | mutation | escape fraction | number GISAID sequences | number locations | dms bind | dms expr |
 |:---------|:---------|----------------:|------------------------:|-----------------:|---------:|---------:|
-| 2B04     | C361T    |            0.07 |                       4 |                1 |    -0.61 |    -1.08 |
-| 2B04     | E484A    |            0.44 |                       2 |                2 |    -0.07 |    -0.23 |
-| 2B04     | E484D    |            0.04 |                       2 |                2 |    -0.38 |    -0.19 |
-| 2B04     | E484K    |            0.36 |                       9 |                4 |     0.06 |    -0.10 |
-| 2B04     | E484Q    |            0.33 |                      17 |                4 |     0.03 |    -0.08 |
-| 2B04     | G485R    |            0.02 |                      38 |                2 |    -0.18 |    -0.54 |
-| 2B04     | F490L    |            0.02 |                       5 |                3 |    -0.11 |    -0.35 |
-| 2B04     | F490S    |            0.02 |                       8 |                1 |     0.00 |    -0.10 |
-| 2B04     | S494L    |            0.22 |                       3 |                3 |    -0.35 |    -1.02 |
-| 2B04     | S494P    |            0.01 |                      14 |                8 |     0.00 |    -0.02 |
-| 2C02     | N394Y    |            0.03 |                       1 |                1 |    -0.02 |    -0.12 |
-| 2C02     | K462N    |            0.04 |                       1 |                1 |    -0.08 |    -0.33 |
-| 2C02     | I468F    |            0.04 |                       2 |                2 |    -0.19 |    -1.04 |
-| 2C02     | I468T    |            0.04 |                       3 |                3 |    -0.14 |     0.17 |
-| 2C02     | E471Q    |            0.03 |                       5 |                2 |    -0.06 |    -0.19 |
-| 2C03     | K417N    |            0.51 |                       4 |                3 |    -0.45 |     0.10 |
+| 2B04     | E484A    |            0.59 |                       2 |                2 |    -0.07 |    -0.23 |
+| 2B04     | E484D    |            0.02 |                       2 |                2 |    -0.38 |    -0.19 |
+| 2B04     | E484K    |            0.50 |                       9 |                4 |     0.06 |    -0.10 |
+| 2B04     | E484Q    |            0.45 |                      17 |                4 |     0.03 |    -0.08 |
+| 2B04     | F490S    |            0.01 |                       8 |                1 |     0.00 |    -0.10 |
+| 2B04     | S494P    |            0.02 |                      14 |                8 |     0.00 |    -0.02 |
+| 2C02     | K462N    |            0.01 |                       1 |                1 |    -0.08 |    -0.33 |
+| 2C02     | I468T    |            0.01 |                       3 |                3 |    -0.14 |     0.17 |
+| 2C03     | K417N    |            0.54 |                       4 |                3 |    -0.45 |     0.10 |
 | 2C03     | G446A    |            0.04 |                       1 |                1 |    -0.26 |    -0.26 |
-| 2C03     | G446V    |            0.44 |                      18 |                9 |    -0.27 |    -0.48 |
-| 2C03     | F456L    |            0.02 |                       2 |                2 |    -0.11 |    -0.49 |
-| 2C03     | A475V    |            0.69 |                      11 |                3 |    -0.14 |    -0.21 |
-| 2C03     | E484A    |            0.72 |                       2 |                2 |    -0.07 |    -0.23 |
-| 2C03     | E484K    |            0.44 |                       9 |                4 |     0.06 |    -0.10 |
-| 2C03     | E484Q    |            0.63 |                      17 |                4 |     0.03 |    -0.08 |
-| 2C03     | F490L    |            0.28 |                       5 |                3 |    -0.11 |    -0.35 |
-| 2C03     | Q493R    |            0.63 |                       1 |                1 |    -0.09 |    -0.06 |
-| 2C03     | S494L    |            0.02 |                       3 |                3 |    -0.35 |    -1.02 |
-| 2E06     | K462N    |            0.14 |                       1 |                1 |    -0.08 |    -0.33 |
-| 2E06     | S514Y    |            0.08 |                       1 |                1 |    -0.12 |    -0.54 |
+| 2C03     | G446S    |            0.01 |                       2 |                1 |    -0.20 |    -0.40 |
+| 2C03     | G446V    |            0.51 |                      18 |                9 |    -0.27 |    -0.48 |
+| 2C03     | F456L    |            0.04 |                       2 |                2 |    -0.11 |    -0.49 |
+| 2C03     | A475V    |            0.76 |                      11 |                3 |    -0.14 |    -0.21 |
+| 2C03     | E484A    |            0.58 |                       2 |                2 |    -0.07 |    -0.23 |
+| 2C03     | E484K    |            0.50 |                       9 |                4 |     0.06 |    -0.10 |
+| 2C03     | E484Q    |            0.73 |                      17 |                4 |     0.03 |    -0.08 |
+| 2C03     | G485S    |            0.02 |                       1 |                1 |    -0.20 |    -0.11 |
+| 2C03     | F490L    |            0.33 |                       5 |                3 |    -0.11 |    -0.35 |
+| 2C03     | F490S    |            0.02 |                       8 |                1 |     0.00 |    -0.10 |
+| 2C03     | Q493R    |            0.54 |                       1 |                1 |    -0.09 |    -0.06 |
+| 2C03     | S494P    |            0.04 |                      14 |                8 |     0.00 |    -0.02 |
+| 2E06     | K462N    |            0.12 |                       1 |                1 |    -0.08 |    -0.33 |

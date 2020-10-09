@@ -50,7 +50,7 @@ escape_score_stop_quantile_filter: 0.99
 escape_score_min_bind: -2.35
 # Filter variants with expression < this threshold, which separates the
 # two modes of expression in the deep mutational scan (Starr et al, 2020):
-escape_score_min_expr: -1.5
+escape_score_min_expr: -1
 # **Prior to fitting global epistasis models**, remove variants that have
 # substitutions that are not observed in at least this many variants in a
 # single-mutant **and** any context:

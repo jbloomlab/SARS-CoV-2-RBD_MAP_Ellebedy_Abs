@@ -107,27 +107,12 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001161</td>
+      <td>0.001216</td>
       <td>0.000603</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>2B04_400</td>
-      <td>331</td>
-      <td>N</td>
-      <td>C</td>
-      <td>E</td>
-      <td>331</td>
-      <td>0.001007</td>
-      <td>0.002096</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -137,13 +122,13 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001007</td>
-      <td>0.001018</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
-      <td>2</td>
+      <td>0.000000</td>
+      <td>0.002036</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>2B04_400</td>
@@ -152,12 +137,12 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001067</td>
+      <td>0.001172</td>
       <td>0.001079</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
     <tr>
@@ -167,12 +152,27 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>F</td>
       <td>E</td>
       <td>331</td>
-      <td>0.003066</td>
-      <td>0.001223</td>
-      <td>0.05265</td>
-      <td>0.06513</td>
-      <td>0.002771</td>
-      <td>0.003428</td>
+      <td>0.003186</td>
+      <td>0.001202</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2B04_400</td>
+      <td>331</td>
+      <td>N</td>
+      <td>G</td>
+      <td>E</td>
+      <td>331</td>
+      <td>0.001503</td>
+      <td>0.000427</td>
+      <td>0.03002</td>
+      <td>0.06028</td>
+      <td>0.001876</td>
+      <td>0.003767</td>
       <td>2</td>
     </tr>
   </tbody>

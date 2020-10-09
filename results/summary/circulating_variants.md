@@ -103,23 +103,23 @@ Session info for reproducing environment:
     ## other attached packages:
     ##  [1] knitr_1.26        seqinr_3.6-1      bio3d_2.4-0       gridExtra_2.3    
     ##  [5] forcats_0.4.0     stringr_1.4.0     dplyr_0.8.3       purrr_0.3.3      
-    ##  [9] readr_1.3.1       tidyr_1.0.0       tibble_3.0.1      ggplot2_3.3.0    
+    ##  [9] readr_1.3.1       tidyr_1.0.0       tibble_3.0.2      ggplot2_3.3.0    
     ## [13] tidyverse_1.3.0   data.table_1.12.8 yaml_2.2.0       
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] tidyselect_0.2.5 xfun_0.11        haven_2.2.0      lattice_0.20-38 
-    ##  [5] colorspace_1.4-1 vctrs_0.2.4      generics_0.0.2   htmltools_0.4.0 
-    ##  [9] rlang_0.4.5      pillar_1.4.3     glue_1.3.1       withr_2.1.2     
-    ## [13] DBI_1.1.0        dbplyr_1.4.2     modelr_0.1.5     readxl_1.3.1    
-    ## [17] lifecycle_0.2.0  munsell_0.5.0    gtable_0.3.0     cellranger_1.1.0
-    ## [21] rvest_0.3.5      evaluate_0.14    parallel_3.6.2   fansi_0.4.0     
-    ## [25] broom_0.5.6      Rcpp_1.0.3       scales_1.1.0     backports_1.1.5 
-    ## [29] jsonlite_1.6     fs_1.3.1         hms_0.5.2        digest_0.6.23   
-    ## [33] stringi_1.4.3    ade4_1.7-13      grid_3.6.2       cli_2.0.0       
-    ## [37] tools_3.6.2      magrittr_1.5     crayon_1.3.4     pkgconfig_2.0.3 
-    ## [41] MASS_7.3-51.4    ellipsis_0.3.0   xml2_1.2.2       reprex_0.3.0    
-    ## [45] lubridate_1.7.4  assertthat_0.2.1 rmarkdown_2.0    httr_1.4.1      
-    ## [49] rstudioapi_0.10  R6_2.4.1         nlme_3.1-143     compiler_3.6.2
+    ##  [1] tidyselect_1.1.0 xfun_0.11        haven_2.2.0      colorspace_1.4-1
+    ##  [5] vctrs_0.3.1      generics_0.0.2   htmltools_0.4.0  rlang_0.4.7     
+    ##  [9] pillar_1.4.5     glue_1.3.1       withr_2.1.2      DBI_1.1.0       
+    ## [13] dbplyr_1.4.2     modelr_0.1.5     readxl_1.3.1     lifecycle_0.2.0 
+    ## [17] munsell_0.5.0    gtable_0.3.0     cellranger_1.1.0 rvest_0.3.5     
+    ## [21] evaluate_0.14    parallel_3.6.2   fansi_0.4.0      broom_0.7.0     
+    ## [25] Rcpp_1.0.3       scales_1.1.0     backports_1.1.5  jsonlite_1.6    
+    ## [29] fs_1.3.1         hms_0.5.2        digest_0.6.23    stringi_1.4.3   
+    ## [33] ade4_1.7-13      grid_3.6.2       cli_2.0.0        tools_3.6.2     
+    ## [37] magrittr_1.5     crayon_1.3.4     pkgconfig_2.0.3  MASS_7.3-51.4   
+    ## [41] ellipsis_0.3.0   xml2_1.2.2       reprex_0.3.0     lubridate_1.7.4 
+    ## [45] assertthat_0.2.1 rmarkdown_2.0    httr_1.4.1       rstudioapi_0.10 
+    ## [49] R6_2.4.1         compiler_3.6.2
 
 Read in table of mutation effects on expression and ACE2 binding
 
@@ -375,10 +375,7 @@ sites of significant antigenic escape across all mAbs.
 
 | Mutation | binding effect | expression effect | number of GISAID sequences | number locations | locations                                                                                                    |
 |:---------|---------------:|------------------:|---------------------------:|-----------------:|:-------------------------------------------------------------------------------------------------------------|
-| A352S    |          -0.06 |             -0.26 |                          8 |                4 | list(c(“Mexico”, “Netherlands”, “Indonesia”, “Wales”))                                                       |
-| A352V    |          -0.52 |             -1.79 |                          2 |                2 | list(c(“Israel”, “England”))                                                                                 |
 | R357K    |           0.05 |              0.18 |                          2 |                2 | list(c(“Japan”, “USA”))                                                                                      |
-| C361T    |          -0.61 |             -1.08 |                          4 |                1 | list(“Panama”)                                                                                               |
 | N394Y    |          -0.02 |             -0.12 |                          1 |                1 | list(“Japan”)                                                                                                |
 | K417N    |          -0.45 |              0.10 |                          4 |                3 | list(c(“Northern\_Ireland”, “Germany”, “England”))                                                           |
 | K417R    |          -0.17 |              0.08 |                          1 |                1 | list(“Israel”)                                                                                               |
@@ -389,7 +386,6 @@ sites of significant antigenic escape across all mAbs.
 | Y453F    |           0.25 |             -0.08 |                          9 |                3 | list(c(“Netherlands”, “South\_Africa”, “Switzerland”))                                                       |
 | F456L    |          -0.11 |             -0.49 |                          2 |                2 | list(c(“USA”, “South\_Korea”))                                                                               |
 | K462N    |          -0.08 |             -0.33 |                          1 |                1 | list(“Portugal”)                                                                                             |
-| E465D    |          -0.12 |             -0.57 |                          1 |                1 | list(“South\_Africa”)                                                                                        |
 | I468F    |          -0.19 |             -1.04 |                          2 |                2 | list(c(“Senegal”, “Australia”))                                                                              |
 | I468T    |          -0.14 |              0.17 |                          3 |                3 | list(c(“Australia”, “Scotland”, “England”))                                                                  |
 | I468V    |          -0.03 |              0.07 |                          6 |                3 | list(c(“Turkey”, “England”, “South\_Africa”))                                                                |
@@ -412,8 +408,6 @@ sites of significant antigenic escape across all mAbs.
 | Q493R    |          -0.09 |             -0.06 |                          1 |                1 | list(“England”)                                                                                              |
 | S494L    |          -0.35 |             -1.02 |                          3 |                3 | list(c(“Australia”, “England”, “Switzerland”))                                                               |
 | S494P    |           0.00 |             -0.02 |                         14 |                8 | list(c(“Wales”, “USA”, “Singapore”, “England”, “India”, “Sweden”, “Scotland”, “Spain”))                      |
-| S514F    |          -0.23 |             -0.91 |                          2 |                2 | list(c(“Scotland”, “England”))                                                                               |
-| S514Y    |          -0.12 |             -0.54 |                          1 |                1 | list(“Oman”)                                                                                                 |
 
 Output table giving nobs and geographic spread for circulating mutants.
 

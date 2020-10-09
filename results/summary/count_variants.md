@@ -812,7 +812,9 @@ _ = barcode_fate_plot.draw()
 ```
 
 
+    
 ![png](count_variants_files/count_variants_36_0.png)
+    
 
 
 ## Add barcode counts to variant table
