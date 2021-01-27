@@ -3,7 +3,7 @@
 For experimental background, see our paper **[here [INSERT LINK]]()**.
 
 ### What data are shown here?
-We are showing mutations to the SARS-CoV-2 RBD that escape antibody binding as measured using mutational antigenic profiling. Raw data is available [here](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Ellebedy_Abs/blob/master/results/supp_data/Ellebedy_invivo_raw_data.csv).
+We are showing mutations to the SARS-CoV-2 RBD that escape antibody binding as measured using mutational antigenic profiling. Raw data are available [here](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Ellebedy_Abs/blob/master/results/supp_data/Ellebedy_invivo_raw_data.csv).
 The drop-down menus can be used to select the escape-mutation maps for each antibody.
 
 When you click on sites, they will be highlighted on the protein structure of the ACE2-bound RBD ([PDB 6M0J](https://www.rcsb.org/structure/6M0J).
