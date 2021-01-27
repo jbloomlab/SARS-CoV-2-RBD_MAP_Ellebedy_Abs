@@ -1,5 +1,5 @@
 # the BioSample accession
-biosample_accession: ?
+biosample_accession: SAMN17606015
 
 # name of CSV file listing barcode runs to uploade
 barcode_runs: ../data/barcode_runs.csv
@@ -9,4 +9,4 @@ ftp_username: subftp
 ftp_account_folder: uploads/jbloom_fhcrc.org_IuMBgK44
 
 # Meaningful name for this sample's FTP folder:
-ftp_subfolder: Ellebedy_in_vivo_antibody_barcodes
+ftp_subfolder: Ellebedy_Abs_barcodes
